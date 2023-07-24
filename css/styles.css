@@ -1,0 +1,677 @@
+/*  
+Author: Kavon Niknafs
+File Name: styles.css
+Date: 04/24/2023
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+ul,
+section,
+aside,
+figure,
+figcaption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	text-align: center;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+/*Style rules for mobile viewport*/
+
+
+/*Hide tab-desk class*/
+.tab-desk,
+#menu-links {
+	display: none;
+}
+
+/* Style rules for header content */
+header {
+	text-align: center;
+	font-family: 'Arimo', sans-serif;
+	color: #f2938c;
+}
+
+header {
+	background-image: url('../images/leaves.jpg');
+	height: 200px;
+	width: 100%;
+	/* You must set a specified height */
+	background-position: center;
+	/* Center the image */
+	background-repeat: no-repeat;
+	/* Do not repeat the image */
+	background-size: cover;
+	/* Resize the background image to cover the entire container */
+}
+
+header a {
+	font-size: 1em;
+}
+
+header h2 {
+	font-size: 1em;
+}
+
+header h1 {
+	padding: 2%;
+	margin-right: 17%;
+	font-size: 2em;
+}
+
+/* Header Facebook and Phone styles */
+
+/* Header links on the sides
+#header-links {
+	margin: 1% 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+*/
+
+/* Header links in the center */
+#header-links {
+	margin: 1% auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+}
+
+#header-links a,
+#header-links h2 {
+	display: inline-block;
+}
+
+header .fb {
+	height: 70px;
+	width: 70px;
+	transform: scale(.5);
+}
+
+footer .fb {
+	height: 50px;
+	width: 50px;
+}
+
+
+/* Phone styles */
+.tel-link {
+	padding: 8px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	border: 2px solid #ed685e;
+	background-color: #f2938c;
+	white-space: nowrap;
+}
+
+/* Style rules for navigation area */
+nav {
+	background-color: #f2938c;
+}
+
+/* Mobile nav rules */
+.mobile-nav a {
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 6%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.menu-icon #icon {
+	height: 50px;
+	width: 50px;
+	background-color: #f2938c;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+/* Style rules for main content */
+main {
+	padding: 0;
+	overflow: auto;
+	font-family: 'Arimo', sans-serif;
+}
+
+main h1 {
+	margin: 2%;
+}
+
+main p {
+	font-size: 1em;
+}
+
+.in-text-link {
+	color: #ed685e;
+	text-decoration: none;
+}
+
+/* Left aligned blocks of text */
+.left-align h1,
+.left-align h2,
+.left-align p {
+	width: 80%;
+	display: inline-block;
+	text-align: left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.left-align h1 {
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.left-align h2 {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.left-align p {
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+
+/* Map Style Rules */
+.map {
+	width: 80%;
+	height: 250px;
+	display: block;
+	border: 0;
+	margin-left: 10%;
+}
+
+/* Service Image rules */
+.serv-img {
+	width: 80%;
+	height: 50%;
+	display: block;
+	border: 0;
+	margin-left: 10%;
+}
+
+/* Service Link rules */
+.serv-link {
+	margin-top: -10px;
+	margin-bottom: 40px;
+}
+
+
+/* Free Quote Banner */
+#banner {
+	text-align: center;
+	padding: 2px;
+}
+
+#banner p {
+	font-size: 1.6em;
+	font-weight: bold;
+	color: black;
+	margin-top: 3% auto;
+}
+
+
+/* Contact Form rules */
+.contact-form {
+	max-width: 480px;
+	width: 85%;
+	min-height: 480px;
+	margin: auto;
+	border: 2px solid #ccc;
+	/* add a border */
+	padding: 20px;
+	/* add some padding */
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	/* add a shadow */
+	background-color: #dbd9d0;
+}
+
+.field {
+	margin-bottom: 15px;
+}
+
+.field label {
+	display: block;
+	font-weight: bold;
+	color: black;
+	padding: 5px;
+}
+
+.field input,
+.field textarea {
+	width: 100%;
+	padding: 15px;
+	border: 0px;
+}
+
+.field input:focus,
+.field textarea:focus {
+	outline: none;
+	border: 1px solid #000;
+}
+
+.submit-button {
+	display: inline-block;
+	width: 40%;
+	padding: 18px;
+	background-color: #f2938c;
+	color: white;
+	border-radius: 8px;
+	border: 0px;
+	white-space: nowrap;
+}
+
+.submit-button:hover {
+	background-color: #ed685e;
+}
+
+.submit-button:active {
+	background-color: white;
+	color: #ed685e;
+}
+
+/* Privacy Policy rules */
+#policy,
+.service-desc {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	/*Delete for centered services pages */
+}
+
+#policy h3,
+.service-desc h1 {
+	padding-top: 15px;
+	text-align: left;
+	/*Delete for centered services pages */
+	margin-left: 0;
+	/*Delete for centered services pages */
+}
+
+/* Services Banner rules */
+#services-banner {
+	margin: 0 5%;
+}
+
+
+/* City list rules */
+/*
+.cities {
+	width: 70%;
+	max-width: 900px;
+	margin: 0 auto 20px;
+}
+
+.cities ul {
+	list-style-type: none;
+	columns: 2;
+}
+
+.cities li {
+	margin: 8px 0;
+}
+*/
+
+/* About Us page rules */
+.about-left {
+	margin: 8% 6%;
+}
+
+.about-right {
+	margin-top: 5%;
+}
+
+
+/* Style elements */
+.green-bg {
+	background-color: #4c5a58;
+	padding: 4%;
+	color: white;
+	text-decoration: none;
+}
+
+.grey-bg {
+	background-color: #dbd9d0;
+	padding: 4%;
+	color: black;
+	text-decoration: none;
+}
+
+/* Divider rules */
+.brown-divider-a,
+.brown-divider-b {
+	display: inline-block;
+	width: 45%;
+	max-width: 400px;
+	height: 70px;
+	margin: 40px 0;
+
+
+	border-top: 7px solid #ed685e;
+	border-radius: 45% 22% 0 0/ 20% 40%;
+}
+
+.brown-divider-a {
+	transform: translateY(15px) translateX(18%);
+}
+
+.brown-divider-b {
+	transform: translateY(-15px) translateX(-18%) rotate(180deg);
+}
+
+
+/* Style rules for footer content */
+footer {
+	text-align: center;
+	font-size: 0.65em;
+}
+
+footer a {
+	color: #4645a8;
+	text-decoration: none;
+	color: white;
+}
+
+
+/* Media Query for Large Phone Viewport */
+@media screen and (min-width: 329px),
+print {
+	header {
+		height: 160px;
+	}
+}
+
+
+/* Media Query for Small Tablet Viewport */
+@media screen and (min-width: 500px),
+print {
+	header {
+		height: 140px;
+
+	}
+}
+
+@media screen and (min-width: 540px),
+print {
+	.serv-img {
+		width: 400px;
+		height: 260px;
+	}
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 750px),
+print {
+	header h1 {
+		font-size: 3em;
+	}
+
+	header h2 {
+		font-size: 1.4em;
+	}
+
+	header .fb {
+		transform: scale(.77);
+	}
+
+	header {
+		height: 190px;
+	}
+}
+
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 900px),
+print {
+
+	/* Tablet Viewport: Show tab-desk class, hide mobile class */
+	.tab-desk {
+		display: block;
+	}
+
+	.mobile,
+	.mobile-nav {
+		display: none;
+	}
+
+	/* Tablet Viewport: Style rule for header content */
+	header h1 {
+		margin: 0;
+		padding: 20px;
+		font-size: 3.4em;
+	}
+
+	header h2 {
+		font-size: 1.8em;
+	}
+
+	header {
+		height: 230px;
+	}
+
+	.fb:hover {
+		transform: scale(1.2);
+		background: #66c2ff;
+		border-radius: 50%;
+	}
+
+	.tel-link:hover {
+		transform: scale(1.2);
+		background-color: #ed685e;
+	}
+
+	/*Tablet Viewport: Style rules for nav area*/
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+
+	nav li {
+		border-top: none;
+		border-right: 1px solid #e5e9fc;
+		display: inline-block;
+		font-size: 1.3em;
+	}
+
+	nav li:last-child {
+		border-right: none;
+	}
+
+	nav li a {
+		display: block;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		padding: 0.5em 1.6em;
+	}
+
+	nav li a:hover {
+		transform: scale(1.2);
+		background-color: #ed685e;
+		border: 2px solid white;
+	}
+
+	/* Split map and map text */
+
+	.map-caption {
+		float: right;
+		width: 35%;
+		margin-right: 8%;
+	}
+
+	/*
+	.map {
+		float: left;
+		width: 45%;
+		margin-left: 10%;
+		height: 350px;
+	}
+	*/
+	.map {
+		width: 80%;
+		margin: 0 auto;
+		height: 350px;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	/* Services split layout */
+	.serv-p {
+		width: 60%;
+		margin-right: 0;
+		vertical-align: top;
+	}
+
+	.left-a {
+		float: left;
+		margin-right: 0;
+	}
+
+	.right-a {
+		float: right;
+		margin-left: 0;
+	}
+
+	.left-a-img {
+		float: left;
+	}
+
+	.right-a-img {
+		float: right;
+	}
+
+	.serv-img {
+		width: 30%;
+		height: 25%;
+		margin: 25px 5% 0;
+	}
+
+	.serv-link {
+		text-align: center;
+		margin-top: 0;
+	}
+
+
+	/* About us page split rules */
+	.about-left {
+		float: left;
+		width: 50%;
+		margin: 5% 5% 0 5%;
+	}
+
+	.about-right {
+		float: right;
+		width: 35%;
+		margin: 5% 5% 0 0;
+	}
+
+	.about-right img {
+		width: 300px;
+		height: 400px;
+	}
+
+	/* Tablet Viewport: Style rule for form element */
+	.contact-form {
+		max-width: 600px;
+		min-height: 450px;
+	}
+
+	/* Form Grid Rules */
+	/* use grid layout */
+	.contact-form {
+		display: grid;
+		/* make the form a grid container */
+		grid-template-columns: repeat(2, 1fr);
+		/* create two equal columns */
+	}
+
+	/* style the form fields */
+	.field {
+		margin: 15px;
+		/* add some space around the fields */
+	}
+
+	.field-large {
+		grid-column: span 2;
+	}
+
+
+	/* Privacy Policy rules */
+	#policy,
+	.service-desc {
+		width: 60%;
+	}
+
+	/* Services Banner rules */
+	#services-banner {
+		margin: 0 15%;
+	}
+
+
+	/* List rules */
+	/*
+	.cities ul {
+		columns: 3;
+	}
+	*/
+
+
+	/* Tablet Viewport: Style rules for footer area */
+
+	/* Inline block for all logos and copyright */
+	.copyright,
+	.social,
+	.social a {
+		display: inline-block;
+	}
+
+	/* space evenly: even space around the elements */
+	#footer-links {
+		margin: 0 30%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
+
+
+
+/*Media Query for Print*/
+@media print {
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+}
