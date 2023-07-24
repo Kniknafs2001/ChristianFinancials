@@ -1,7 +1,7 @@
 /*  
 Author: Kavon Niknafs
 File Name: script.js
-Date: 04/10/2023
+Date: 07/24/2023
 */
 
 //Hamburger menu function
