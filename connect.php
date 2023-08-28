@@ -7,7 +7,7 @@
   
     //Database connection
 
-    $conn = new mysqli('localhost', 'root', '', 'test')
+    $conn = new mysqli('localhost', 'u637671007_CF1', 'qN3!FA&]oS6', 'u637671007_CF1_Form_Subs')
 
     if($conn->connect_error) {
         die('Connection Failed  : '.$conn->connect_error);
